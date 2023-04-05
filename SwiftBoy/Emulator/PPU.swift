@@ -161,6 +161,21 @@ struct Object {
     let attributes: UInt8
 }
 //add color here!
+//something like this ig
+//this is c++, tho
+//  std::array<char, BMP_SIZE(256, 256)> array;
+//  bmp_init(array.data(), size_x, size_y);
+//  for (int y = 0; y < size_y; y++)
+//  for (int x = 0; x < size_x; x++)
+//  {
+//      const uint16_t color = pixels.at(y * size_x + x);
+//      const uint32_t r = ((color >> 0) & 0x1f) << 3;
+//      const uint32_t g = ((color >> 5) & 0x1f) << 3;
+//      const uint32_t b = ((color >> 10) & 0x1f) << 3;
+//      const uint32_t rgba = (r << 16) | (g << 8) | (b << 0);
+//      bmp_set(array.data(), x, y, rgba);
+//  }
+//
 let defaultPalette: [UInt8: Pixel] = [
     0: Pixel.white,
     1: Pixel.lightGray,
