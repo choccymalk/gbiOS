@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82C0B55A29DA665500990584 /* tetris.gb in Resources */ = {isa = PBXBuildFile; fileRef = 82C0B55429DA665400990584 /* tetris.gb */; };
-		82C0B55B29DA665500990584 /* tlozla.gb in Resources */ = {isa = PBXBuildFile; fileRef = 82C0B55529DA665400990584 /* tlozla.gb */; };
-		82C0B55C29DA665500990584 /* sml.gb in Resources */ = {isa = PBXBuildFile; fileRef = 82C0B55629DA665400990584 /* sml.gb */; };
-		82C0B55D29DA665500990584 /* yellow.gb in Resources */ = {isa = PBXBuildFile; fileRef = 82C0B55729DA665500990584 /* yellow.gb */; };
+		828024BA29DDFA4C00BDF336 /* yellow.gb in Resources */ = {isa = PBXBuildFile; fileRef = 828024B629DDFA4C00BDF336 /* yellow.gb */; };
+		828024BB29DDFA4C00BDF336 /* tlozla.gb in Resources */ = {isa = PBXBuildFile; fileRef = 828024B729DDFA4C00BDF336 /* tlozla.gb */; };
+		828024BC29DDFA4C00BDF336 /* tetris.gb in Resources */ = {isa = PBXBuildFile; fileRef = 828024B829DDFA4C00BDF336 /* tetris.gb */; };
+		828024BD29DDFA4C00BDF336 /* sml.gb in Resources */ = {isa = PBXBuildFile; fileRef = 828024B929DDFA4C00BDF336 /* sml.gb */; };
 		A11768D127E55F2600DC4751 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = A11768D027E55F2600DC4751 /* AudioKit */; };
 		A11768D427E55F4100DC4751 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = A11768D327E55F4100DC4751 /* SoundpipeAudioKit */; };
 		A12B15FA2774851C00418291 /* Joypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B15F92774851C00418291 /* Joypad.swift */; };
@@ -35,10 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		82C0B55429DA665400990584 /* tetris.gb */ = {isa = PBXFileReference; lastKnownFileType = file; name = tetris.gb; path = ../../../../../gbrom/tetris.gb; sourceTree = "<group>"; };
-		82C0B55529DA665400990584 /* tlozla.gb */ = {isa = PBXFileReference; lastKnownFileType = file; name = tlozla.gb; path = ../../../../../gbrom/tlozla.gb; sourceTree = "<group>"; };
-		82C0B55629DA665400990584 /* sml.gb */ = {isa = PBXFileReference; lastKnownFileType = file; name = sml.gb; path = ../../../../../gbrom/sml.gb; sourceTree = "<group>"; };
-		82C0B55729DA665500990584 /* yellow.gb */ = {isa = PBXFileReference; lastKnownFileType = file; name = yellow.gb; path = ../../../../../gbrom/yellow.gb; sourceTree = "<group>"; };
+		828024B629DDFA4C00BDF336 /* yellow.gb */ = {isa = PBXFileReference; lastKnownFileType = file; path = yellow.gb; sourceTree = "<group>"; };
+		828024B729DDFA4C00BDF336 /* tlozla.gb */ = {isa = PBXFileReference; lastKnownFileType = file; path = tlozla.gb; sourceTree = "<group>"; };
+		828024B829DDFA4C00BDF336 /* tetris.gb */ = {isa = PBXFileReference; lastKnownFileType = file; path = tetris.gb; sourceTree = "<group>"; };
+		828024B929DDFA4C00BDF336 /* sml.gb */ = {isa = PBXFileReference; lastKnownFileType = file; path = sml.gb; sourceTree = "<group>"; };
 		A12B15F92774851C00418291 /* Joypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joypad.swift; sourceTree = "<group>"; };
 		A13BADB9284613F7001B9FF6 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
 		A13BADBB284636EE001B9FF6 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
@@ -129,10 +129,10 @@
 		A1B4014F26EB5DCE002F4512 /* ROMs */ = {
 			isa = PBXGroup;
 			children = (
-				82C0B55629DA665400990584 /* sml.gb */,
-				82C0B55429DA665400990584 /* tetris.gb */,
-				82C0B55529DA665400990584 /* tlozla.gb */,
-				82C0B55729DA665500990584 /* yellow.gb */,
+				828024B929DDFA4C00BDF336 /* sml.gb */,
+				828024B829DDFA4C00BDF336 /* tetris.gb */,
+				828024B729DDFA4C00BDF336 /* tlozla.gb */,
+				828024B629DDFA4C00BDF336 /* yellow.gb */,
 				A1785E6A283BA1D3006CD7AC /* cpu_instrs.gb */,
 			);
 			path = ROMs;
@@ -204,13 +204,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C0B55C29DA665500990584 /* sml.gb in Resources */,
 				A1B4011B26EB593A002F4512 /* Assets.xcassets in Resources */,
-				82C0B55B29DA665500990584 /* tlozla.gb in Resources */,
-				82C0B55D29DA665500990584 /* yellow.gb in Resources */,
+				828024BC29DDFA4C00BDF336 /* tetris.gb in Resources */,
+				828024BA29DDFA4C00BDF336 /* yellow.gb in Resources */,
 				A1785E70283BA1D3006CD7AC /* cpu_instrs.gb in Resources */,
-				82C0B55A29DA665500990584 /* tetris.gb in Resources */,
 				A1B4011926EB5937002F4512 /* Main.storyboard in Resources */,
+				828024BB29DDFA4C00BDF336 /* tlozla.gb in Resources */,
+				828024BD29DDFA4C00BDF336 /* sml.gb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

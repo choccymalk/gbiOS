@@ -19,11 +19,14 @@ public struct Pixel {
         self.a = a
     }
     
-    public static let white = Pixel(r: 255, g: 255, b: 255)
-    public static let lightGray = Pixel(r: 192, g: 192, b: 192)
-    public static let darkGray = Pixel(r: 96, g: 96, b: 96)
-    public static let black = Pixel(r: 0, g: 0, b: 0)
-    public static let transparent = Pixel(r: 0, g: 0, b: 0, a: 0)
+    public static let white = Pixel(r: 255, g: 255, b: 255);
+    public static let lightGray = Pixel(r: 192, g: 192, b: 192);
+    public static let darkGray = Pixel(r: 96, g: 96, b: 96);
+    public static let black = Pixel(r: 0, g: 0, b: 0);
+    public static let transparent = Pixel(r: 0, g: 0, b: 0, a: 0);
+    public static let red = Pixel(r:255,g:0,b:0);
+    public static let blue = Pixel(r:0,g:0,b:255);
+    public static let green = Pixel(r:0,g:255,b:0);
     
     public static func random() -> Pixel {
         return Pixel(r: UInt8.random(in: 0...255), g: UInt8.random(in: 0...255), b: UInt8.random(in: 0...255))
@@ -176,12 +179,24 @@ struct Object {
 //      bmp_set(array.data(), x, y, rgba);
 //  }
 //
-let defaultPalette: [UInt8: Pixel] = [
-    0: Pixel.white,
-    1: Pixel.lightGray,
-    2: Pixel.darkGray,
-    3: Pixel.black
-]
+switch pallete_select {
+    case 1{
+        let defaultPalette: [UInt8: Pixel] = [
+            0: Pixel.white,
+            1: Pixel.lightGray,
+            2: Pixel.darkGray,
+            3: Pixel.black
+        ]
+    }
+    case 2{
+        let colorPalette0: [UInt8: Pixel] = [
+            0: Pixel.white,
+            1: Pixel.blue,
+            2: Pixel.green,
+            3: Pixel.black,
+        ]
+    }
+}
 
 public class PPU {
     public let view: LCDBitmapView

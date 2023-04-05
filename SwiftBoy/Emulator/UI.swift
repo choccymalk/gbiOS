@@ -282,6 +282,32 @@ struct StartSelectView: View {
         }
     }
 }
+struct ColorSelect: View {
+    @EnvironmentObject private var buttons: Buttons
+    
+    var body: some View {
+        HStack {
+            GameButtonView(
+                shape: RoundedRectangle(cornerRadius: 5),
+                label: "Pallete 0",
+                width: 45,
+                height: 10,
+                onPressed: { palette_select = 1 },
+                onReleased: { palette_select = 1 }
+            )
+            .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5))
+            GameButtonView(
+                shape: RoundedRectangle(cornerRadius: 5),
+                label: "Pallete 1",
+                width: 45,
+                height: 10,
+                onPressed: { palette_select = 2 },
+                onReleased: { palette_select = 2 }
+            )
+            .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5))
+        }
+    }
+}
 
 struct TitleView: View {
     var title: String
