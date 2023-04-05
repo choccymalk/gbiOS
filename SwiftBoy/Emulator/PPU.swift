@@ -160,7 +160,7 @@ struct Object {
     let index: UInt8
     let attributes: UInt8
 }
-
+//add color here!
 let defaultPalette: [UInt8: Pixel] = [
     0: Pixel.white,
     1: Pixel.lightGray,
