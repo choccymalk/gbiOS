@@ -1,3 +1,2 @@
 # gbiOS
-iOS Gameboy emulator
-Forked from Swift Boy
+iOS Gameboy emulator, forked from Swift Boy
