@@ -505,6 +505,8 @@ struct GameBoyView: View {
                                 }
                                 Spacer()
                                 StartSelectView()
+                                Spacer()
+                                ColorSelect()
                             }
                             .padding()
                         }
